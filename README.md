@@ -1,4 +1,4 @@
-# To-Do-M <img src="app/favicon.ico">
+# To-Do-M
 `Pronounced as "Tudum" 👀`
 
 It's just a To-Do List project using React.
