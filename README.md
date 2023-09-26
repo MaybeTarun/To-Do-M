@@ -1,3 +1,4 @@
 # To-Do-M
-{ Pronounced as Tudum 👀 }
+`{ Pronounced as Tudum 👀 }`
+
 Just a To Do List using react
