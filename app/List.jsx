@@ -16,8 +16,10 @@ function List() {
     setItemList("");
   };
 
-  const dltItem = () => {
-    con
+  const dltItem = (index) => {
+    setItems((oldItems) => {
+      return oldItems.filter((_, i) => i !== index);
+    });
   };
 
   return (
@@ -27,13 +29,11 @@ function List() {
         <button className="additem" onClick={addItem}>+</button>
       </div>
       <ul className="items">
-        {items.map((item, index) => {
-          return (
-            <>
-            <li key={index}><button className="dltitem" onClick={dltItem}>x</button> {item}</li>
-            </>
-          )
-        })}
+        {items.map((item, index) => (
+          <li key={index}>
+            <button className="dltitem" onClick={() => dltItem(index)}>x</button> {item}
+          </li>
+        ))}
       </ul>
     </>
   );
